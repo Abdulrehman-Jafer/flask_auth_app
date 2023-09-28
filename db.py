@@ -1,9 +1,10 @@
 from pymongo import MongoClient
+from decouple import config
 
 # using connection string
-client = MongoClient(
-    "mongodb+srv://Abdulrehman-Jafer:Paswordhai2007@node-cluster.e3ibxci.mongodb.net/pytonCrud?retryWrites=true&w=majority"
-)
+
+MONGO_URI = config("MONGO_URI")
+client = MongoClient(MONGO_URI)
 
 # creating database
 

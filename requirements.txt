@@ -1,4 +1,5 @@
 flask
 pymongo
-flask_bcrypt
-flask_jwt_extended
+flask-bcrypt
+flask-jwt-extended
+python-decouple
